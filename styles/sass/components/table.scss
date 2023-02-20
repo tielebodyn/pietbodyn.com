@@ -1,0 +1,23 @@
+.tableParent{
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-top: 20px;
+    justify-content: center;
+    width: 80%;
+
+    border-spacing: 0px;
+}
+th{
+    text-align: left;
+    padding-bottom: 20px;
+    font-family: korpus;
+
+}
+td{
+    font-family: korpus;
+    border-top: 1px solid blue;
+    padding: 10px 0px;
+
+}

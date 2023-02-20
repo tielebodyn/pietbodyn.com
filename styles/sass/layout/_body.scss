@@ -1,0 +1,101 @@
+@use 'sass:math';
+
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;    /*
+    current width 1000px
+    */
+    @for $i from 1 through 12 {
+        &.col-#{$i}{
+            grid-template-columns: repeat(#{$i}, (1200px / $i));
+            &>.item{
+                height:  (1200px / $i);
+            }
+        }
+    }
+
+    }
+    .item{
+        //background-color: gray;
+        
+       // margin: 2.5px;
+       //@debug width: inherit;
+    }
+    #item1{
+        border-radius: 1000px;
+        background-color: yellow;
+    }
+    #item10{
+        border-radius: 1000px;
+        background-color: yellow;
+    }
+    #item20{
+        border-radius: 1000px;
+        background-color: yellow;
+    }
+    #item20{
+        border-radius: 1000px;
+        background-color: yellow;
+    }
+    #item25{
+        border-radius: 1000px;
+        background-color: red;
+    }
+    @media (max-width: 1200px) {
+        .container{
+            @for $i from 1 through 12 {
+                &.col-#{$i}{
+                    grid-template-columns: repeat(#{$i}, (1000px / $i));
+                    &>.item{
+                        height:  (1000px / $i);
+                    }
+                }
+            }
+    }}
+    @media (max-width: 1000px) {
+        .container{
+            @for $i from 1 through 12 {
+                &.col-#{$i}{
+                    grid-template-columns: repeat(#{$i}, (800px / $i));
+                    &>.item{
+                        height:  (800px / $i);
+                    }
+                }
+            }
+    }}
+    @media (max-width: 800px) {
+        .container{
+            @for $i from 1 through 12 {
+                &.col-#{$i}{
+                    grid-template-columns: repeat(#{$i}, (600px / $i));
+                    &>.item{
+                        height:  (600px / $i);
+                    }
+                }
+            }
+    }}
+    @media (max-width: 600px) {
+        .container{
+            @for $i from 1 through 12 {
+                &.col-#{$i}{
+                    grid-template-columns: repeat(#{$i}, (400px / $i));
+                    &>.item{
+                        height:  (400px / $i);
+                    }
+                }
+            }
+    }}
+    @media (max-width: 410px) {
+        .container{
+            @for $i from 1 through 12 {
+                &.col-#{$i}{
+                    grid-template-columns: repeat(#{$i}, (350px / $i));
+                    &>.item{
+                        height:  (350px / $i);
+                    }
+                }
+            }
+    }}

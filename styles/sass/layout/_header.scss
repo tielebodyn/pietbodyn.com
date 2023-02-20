@@ -1,0 +1,64 @@
+/**
+* Header
+**/
+@import url("fonts.css");
+/**
+* header
+*/
+a {
+    text-decoration: none;
+    color: blue;
+    font-family: Korpus;
+    font-size: 20px;
+}
+
+
+
+header {
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-title {
+    padding: 0px 40px;
+    display: flex;
+}
+
+.menu-item {
+    width: 180px;
+}
+
+.menu-item:first-child {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+header:hover .hide {
+    display: block
+}
+@media (max-width: 530px) {
+    .menu-title {
+        padding: 0px;
+        display: flex;
+ }   
+ .menu-item{
+    width: fit-content;
+ }
+ header{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    margin-top: 0px;
+ }
+}

@@ -1,0 +1,69 @@
+
+.square{
+    cursor: pointer;
+    &>.margin-bottom{
+        margin-bottom: 0px;
+    }
+    &>*{
+        background-color: blue;
+        width: 30px;
+        height: 10px;
+    }
+    &:hover{
+        &>.margin-bottom{
+            margin-bottom: 7.5px;
+        }
+        &>*{
+            background-color: blue;
+            width: 30px;
+            height: 5px;
+        }
+    }
+
+}
+.list{
+    cursor: pointer; 
+    &>.margin-bottom{
+        margin-bottom: 7.5px;
+    }
+    &>*{
+        background-color: blue;
+        width: 30px;
+        height: 5px;
+    }
+    &:hover{
+        &>.margin-bottom{
+            margin-bottom: 0px;
+        }
+        &>*{
+            background-color: blue;
+            width: 30px;
+            height: 10px;
+        }
+    }
+}
+
+.triangle{
+    cursor: pointer;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid blue;
+  }
+.triangle:hover{
+    border-right: 0px;
+	border-top: 20px solid transparent;
+	border-left: 30px solid blue;
+	border-bottom: 20px solid transparent;
+    margin: 0px 5px;
+    padding-left: 10px;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    25% { color: transparent; }
+    50% { color: blue; }
+    75% { color: transparent; }
+    100% { color: red; }
+  }

@@ -1,0 +1,12 @@
+/**
+* Grid
+**/
+@use 'sass:math';
+@use '../abstracts/mediamixins' as media;
+@use '../abstracts/variables' as vars;
+
+
+// @for $i from 1 through vars.$columns{
+//     $width: math.percentage($i/12);
+//     .col-#{$i} {flex-basis: $width;}
+// }

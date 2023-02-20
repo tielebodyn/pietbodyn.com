@@ -1,0 +1,59 @@
+/**
+* Mixins
+**/
+@mixin hover {
+    &:not([disabled]):hover {
+        @content;
+    }
+}
+@mixin bg-image($url){
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@mixin flex-center-center($direction){
+    flex-direction: $direction;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-between($direction){
+    flex-direction: $direction;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin tripleLinearGradient($degree, $start, $middle, $end) {
+    background: linear-gradient($degree, $start 0%, $middle 50%, $end 100%);
+}
+
+@mixin quadrupleLinearGradient($degree, $one, $two, $three, $four) {
+    background: linear-gradient($degree, $one 0%, $two 20%, $three 75%, $four 100%);
+}
+
+@mixin slider($element) {
+    @keyframes slider {
+        0% {
+            right: 0%
+        }
+
+        33% {
+            right: 33%
+        }
+
+        66% {
+            right: 66%
+        }
+
+        99% {
+            right: 100%
+        }
+    }
+
+    .#{$element} {
+        animation: slider linear 5s infinite
+    }
+}

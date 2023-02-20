@@ -1,0 +1,46 @@
+/**
+* Base
+**/
+
+@use "sass:map"; 
+@use "../abstracts/variables" as vars;
+@use "../base/typography" as types;
+body {
+   padding: 0px;
+   margin: 0px;
+}
+p{
+    font-family: korpus;
+    color: blue;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+select{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.transparent{
+    color: transparent;
+    background-color: transparent;
+}
+.hidden{
+ display: none;
+}
+.circle-y{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 100px;
+
+}
+.circle-r{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 100px;
+
+}
